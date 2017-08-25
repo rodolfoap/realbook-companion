@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8"> 
+<html>
+<head></head>
+<body></body>
+</html>
+<script src="lib/jquery.js"></script><script src="lib/mustache.js"></script><script>
+	function getParameterByName(name, url) {
+		if (!url) url = window.location.href;
+		name = name.replace(/[\[\]]/g, "\\$&");
+		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"), results = regex.exec(url);
+		if (!results) return null;
+		if (!results[2]) return '';
+		return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+
+	$(document).ready(function(){
+		$.get('lib/head.tpl', null, function(html) {
+			var rendered = Mustache.render(html, { scoreName: getParameterByName('s') } );
+			$('head').html(rendered);
+		}, "text");
+		$.get('lib/body.tpl', null, function(html) {
+			var rendered = Mustache.render(html, { scoreName: getParameterByName('s') } );
+			$('body').html(rendered);
+		}, "text");
+	});
+</script>
+

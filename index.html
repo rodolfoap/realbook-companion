@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Realbook Companion</title>
+	<meta name="description" content="The Realbook Companion">
+	<meta name="author" content="rodolfoap@http://ydor.org">
+	<style>
+		html {
+			height: 100%;
+			min-height: 100%;
+			margin: 0;
+		}
+		body {
+			height: 100%;
+			min-height: 100%;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+<h2><div id=buttonsArea ></h2>
+<script> var buttonsArea = document.getElementById('buttonsArea');
+function getButton(line) {
+	if(line.startsWith("#")){
+		return "<h2>"+line.substr(1)+"</h2>";
+	} else if (line.length > 2) {
+		return "<input type='button' "
+		     + "onclick='location.href=\"song.html?s="+line+"#\";' "
+ 		     + "value='"+line+"' "
+		     + "style='display: inline-block; height: 80px;font-family: Arial,Helvetica,sans-serif; font-size: 20px;'/>";
+	} else return "";
+}
+function readTextFile(file) {
+	var rawFile = new XMLHttpRequest();
+	rawFile.open("GET", file, false);
+	rawFile.onreadystatechange = function() {
+		if (rawFile.readyState == 4) {
+			if (rawFile.status == 200 || rawFile.status == 0) {
+				var allText = rawFile.responseText;
+				var newText = "";
+				var lines = allText.split('\n');
+				for(var i=0; i<lines.length; i++) {
+					newText+=getButton(lines[i]);
+				}
+				buttonsArea.innerHTML=newText;
+			}
+		}
+	}
+	rawFile.send(null);
+}
+readTextFile("song.list");
+</script >
+</body>
+</html>

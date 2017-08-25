@@ -1,0 +1,4 @@
+#!/bin/bash
+[ -f song.list ] && { echo song.list already exists: delete before generating.; exit; }
+ls -1 img/|grep .png|sort|sed "s/\.png$//g" > song.list
+cat song.list

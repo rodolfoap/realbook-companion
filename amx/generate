@@ -1,0 +1,19 @@
+#!/bin/bash
+rm -f exercise* ../aud/* ../img/* ../htm/*
+genpart() {
+	FILENAME=$1; TEMPO=$2; COUNT=$3; DENOMINATOR=$4; LEVEL=$5; OPTIONS=$6;
+	abcmusiex -t ${TEMPO} -n ${COUNT} -d ${DENOMINATOR} --min 6 --max 19 -l ${LEVEL} \
+		  -k "C" -c treble -b 3 -w 4 -T "$FILENAME" -C "ABCMusiex" -W "" -o "exercise" --stage 6 ${OPTIONS}
+	convert -background white -alpha remove -density 120 exercise.ps exercise.png
+	[ -f exercise-1.png ] && { mv exercise-0.png exercise.png; rm -f exercise-*.png; }
+	mv -v exercise.png ../img/${FILENAME}.png
+	mv -v exercise.mp3 ../aud/${FILENAME}.mp3
+	rm -f exercise.*
+}
+
+#	FILENAME 		T	N	D	L	OPTIONS
+genpart ex61_t40_n70-3x4-l4 	60 	70 	3 	4
+genpart ex62_t40_n70-3x4-l4 	60 	70 	3 	4
+
+genpart ex71_t40_n70-3x4-l4-r 	60 	70 	3 	4 	--rests
+genpart ex72_t40_n70-3x4-l4-r 	60 	70 	3 	4 	--rests
