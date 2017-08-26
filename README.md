@@ -55,7 +55,7 @@ AfternoonInParis
 Valentinology
 ```
 * Copy the full directory to the tablet and open the **index.html** file with a browser. 
-* Browsers use URLs like **file:///storage/sdcard0/Download/realbook-companion/index.html** .
+* Browsers use URLs like **file:///storage/sdcard0/Download/realbook-companion-master/index.html** .
 
 It will look like this (depending on the songs you load, you can load a million, up to yout tablet's RAM memory):
 
