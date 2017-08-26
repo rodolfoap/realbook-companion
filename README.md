@@ -39,7 +39,7 @@ The content should be similar to:
 ├── song.html
 └── song.list <-- This is the main page content 
 ```
-* List all your song names inside the **songs.list** file. Comments begin with the symbol **#**; all the names should be identic (mp3, mxt, png, titles), including caps.
+* List all your song names inside the **songs.list** file. Comments begin with the symbol **#**; all the names should be identic (mp3, mxt, png, titles), including caps. For example, to add a song, the names should be exactly like "MyFavoriteSong.mp3" (inside the **aud** folder), "MyFavoriteSong.png" (inside the **img** folder); **songs.list** should have an entry named just "MyFavoriteSong".
 
 ### Example of **songs.list**
 
@@ -53,7 +53,10 @@ BeautifulLove
 AfternoonInParis
 ...
 ```
-It will look like this:
+* Copy the full directory to the tablet and open the **index.html** file with a browser. 
+* Browsers use URLs like **file:///storage/sdcard0/Download/realbook-companion/index.html** .
+
+It will look like this (depending on the songs you load, you can load a million, up to yout tablet's RAM memory):
 
 ![rbc_pc.png](https://github.com/rodolfoap/realbook-companion/blob/master/lib/rbc_pc.png)
 
