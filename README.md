@@ -63,7 +63,7 @@ It will look like this (depending on the songs you load, you can load a million,
 
 ![rbc_pc.png](https://github.com/rodolfoap/realbook-companion/blob/master/lib/rbc_pc.png)
 
-* If you have a _linux_ pc, you can generate sight reading exercises using [abcmusiex](https://github.com/rodolfoap/abcmusiex). Install abcmusiex and use customize the script on the **amx/** directory to generate as much exercises as you need, with the difficulty level you choose. The results will be automatically stored inside the **aud/** and **img/** directories. You just need to add the exercise names to your **songs.list** file.
+* If you have a _linux_ pc, you can generate sight reading exercises using [abcmusiex](https://github.com/rodolfoap/abcmusiex). Install abcmusiex, customize and run the script on the **amx/** directory to generate as much exercises as you need, with the difficulty level you choose. The results will be automatically stored inside the **aud/** and **img/** directories. You just need to add the exercise names to your **songs.list** file.
 
 ## Buttons usage:
 
