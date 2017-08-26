@@ -8,10 +8,10 @@ A view on my android phone:
 
 ## How to use the application
 
-* To download, press the **Clone or download** button on this page, and select **Download zip**. Unzip it. On android devices, it will be downloaded to some location like **/storage/sdcard0/Download/realbook-companion-master**. The usage is intuitive, after downloading, try opening the **index.html** file with a browser (Firefox works fine, I don't know about others).
+* To download, press the **Clone or download** button on this page, and select **Download zip**. Unzip it. On android devices, it will be downloaded to some location like **/storage/sdcard0/Download/realbook-companion-master**. The usage is intuitive, after downloading, try opening the **index.html** file with a browser (Firefox works fine, I don't know about others). Some example files on very-low mp3 quality (32bps, due to space limitation on github) are provided. 
 * Put **mp3** files inside the directory **aud/** --names are important, use [CamelCase](https://en.wikipedia.org/wiki/Camel_case) with the right extension--, e.g. **MyFavoriteSong.mp3**.
 * Put **png** files inside the directory **img/** --names are important, use exactly the same name as the mp3 file; e.g. **MyFavoriteSong.png** --.
-* Optionally, put **.mxt** (just plain text files) inside the directory **mxt/** to add your comments that will be displayed below the sheet; e.g. **MyFavoriteSong.mxt** .
+* Optionally, put **.mxt** (just plain text files) inside the directory **mxt/** to add your comments that will be displayed on the green stripe below the sheet; e.g. **MyFavoriteSong.mxt** .
 The content should be similar to:
 
 ```
