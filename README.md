@@ -12,7 +12,6 @@ A view on my android phone:
 * Put **mp3** files inside the directory **aud/** --names are important, use [CamelCase](https://en.wikipedia.org/wiki/Camel_case) with the right extension--, e.g. **MyFavoriteSong.mp3**.
 * Put **png** files inside the directory **img/** --names are important, use exactly the same name as the mp3 file; e.g. **MyFavoriteSong.png** --.
 * Optionally, put **.mxt** (just plain text files) inside the directory **mxt/** to add your comments that will be displayed on the green stripe below the sheet; e.g. **MyFavoriteSong.mxt** .
-* If you have a _linux_ pc, you can generate sight reading exercises using [abcmusiex](href=https://github.com/rodolfoap/abcmusiex). Install abcmusiex and use customize the script on the **amx/** directory to generate as much exercises as you need, with the difficulty level you choose. The results will be automatically stored inside the **aud/** and **img/** directories. You just need to add the exercise names to your **songs.list** file.
 
 The content should be similar to:
 
@@ -63,6 +62,8 @@ Valentinology
 It will look like this (depending on the songs you load, you can load a million, up to yout tablet's RAM memory):
 
 ![rbc_pc.png](https://github.com/rodolfoap/realbook-companion/blob/master/lib/rbc_pc.png)
+
+* If you have a _linux_ pc, you can generate sight reading exercises using [abcmusiex](https://github.com/rodolfoap/abcmusiex). Install abcmusiex and use customize the script on the **amx/** directory to generate as much exercises as you need, with the difficulty level you choose. The results will be automatically stored inside the **aud/** and **img/** directories. You just need to add the exercise names to your **songs.list** file.
 
 ## Buttons usage:
 
