@@ -41,9 +41,9 @@ The content should be similar to:
 ├── song.html
 └── song.list <-- This is the main page content 
 ```
-* List all your song names inside the **songs.list** file. Comments begin with the symbol **#**; all the names should be identic (mp3, mxt, png, titles), including caps. For example, to add a song, the names should be exactly like "MyFavoriteSong.mp3" (inside the **aud** folder), "MyFavoriteSong.png" (inside the **img** folder); **songs.list** should have an entry named just "MyFavoriteSong".
+* List all your song names inside the **song.list** file. Comments begin with the symbol **#**; all the names should be identic (mp3, mxt, png, titles), including caps. For example, to add a song, the names should be exactly like "MyFavoriteSong.mp3" (inside the **aud** folder), "MyFavoriteSong.png" (inside the **img** folder); **song.list** should have an entry named just "MyFavoriteSong".
 
-### Example of **songs.list**
+### Example of **song.list**
 
 ```
 # Slow
@@ -63,7 +63,7 @@ It will look like this (depending on the songs you load, you can load a million,
 
 ![rbc_pc.png](https://github.com/rodolfoap/realbook-companion/blob/master/lib/rbc_pc.png)
 
-* If you have a _linux_ pc, you can generate sight reading exercises using [abcmusiex](https://github.com/rodolfoap/abcmusiex). Install abcmusiex, customize and run the script on the **amx/** directory to generate as much exercises as you need, with the difficulty level you choose. The results will be automatically stored inside the **aud/** and **img/** directories. You just need to add the exercise names to your **songs.list** file.
+* If you have a _linux_ pc, you can generate sight reading exercises using [abcmusiex](https://github.com/rodolfoap/abcmusiex). Install abcmusiex, customize and run the script on the **amx/** directory to generate as much exercises as you need, with the difficulty level you choose. The results will be automatically stored inside the **aud/** and **img/** directories. You just need to add the exercise names to your **song.list** file.
 
 ## Buttons usage:
 
