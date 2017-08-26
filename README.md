@@ -8,9 +8,9 @@ A view on my phone:
 
 ## How to use the application
 
-* Put **mp3** files inside the directory **aud/**
-* Put **png** files inside the directory **img/**
-* Optionally, put **.mxt** (just plain text files) inside the directory **mxt/** to add your comments that will be displayed below the sheet.
+* Put **mp3** files inside the directory **aud/** --names are important, use [CamelCase](https://en.wikipedia.org/wiki/Camel_case) with the right extension--, e.g. **MyFavoriteSong.mp3**.
+* Put **png** files inside the directory **img/** --names are important, use exactly the same name as the mp3 file; e.g. **MyFavoriteSong.png** --.
+* Optionally, put **.mxt** (just plain text files) inside the directory **mxt/** to add your comments that will be displayed below the sheet; e.g. **MyFavoriteSong.mxt** .
 The content should be similar to:
 
 ```
@@ -52,6 +52,7 @@ BeautifulLove
 # Standards
 AfternoonInParis
 ...
+Valentinology
 ```
 * Copy the full directory to the tablet and open the **index.html** file with a browser. 
 * Browsers use URLs like **file:///storage/sdcard0/Download/realbook-companion/index.html** .
@@ -66,7 +67,7 @@ It will look like this (depending on the songs you load, you can load a million,
 
 * _Example score sheets have been taken from the internet, please replace them with yours. In case of any rights violation, just let me know and will delete the bad content._
 * _All mp3 files have been generated and have the lowest mp3 quality: 32bps, please replace them with yours._
-* All the code is GNU3.
+* _All the code is GNU3_.
 
 RodolfoAP (http://ydor.org)
 
