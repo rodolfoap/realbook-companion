@@ -1,5 +1,5 @@
 #!/bin/bash
-rm -f exercise* ../aud/* ../img/* ../htm/*
+rm -f exercise*
 genpart() {
 	FILENAME=$1; TEMPO=$2; COUNT=$3; DENOMINATOR=$4; LEVEL=$5; OPTIONS=$6;
 	abcmusiex -t ${TEMPO} -n ${COUNT} -d ${DENOMINATOR} --min 6 --max 19 -l ${LEVEL} \
